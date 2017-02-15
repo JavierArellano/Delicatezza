@@ -78,4 +78,58 @@
         loop: true
     })
 
+    const mapStyles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    function initialize() {
+
+
+      // Create a new StyledMapType object, passing it the array of styles,
+      // as well as the name to be displayed on the map type control.
+      var styledMap = new google.maps.StyledMapType(mapStyles,
+        {name: "Styled Map"});
+
+      // Create a map object, and include the MapTypeId to add
+      // to the map type control.
+      var mapOptions = {
+        zoom: 11,
+        center: new google.maps.LatLng(37.1937506, -3.619635217),
+        mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.SATELLITE, 'map_style']
+        }
+      };
+      var map = new google.maps.Map(document.getElementById('map'),
+        mapOptions);
+
+      //Associate the styled map with the MapTypeId and set it to display.
+      map.mapTypes.set('map_style', styledMap);
+      map.setMapTypeId('map_style');
+    }
+
+    var map;
+    function initMap() {
+        var styledMap = new google.maps.StyledMapType(mapStyles,
+          {name: "Map"});
+        var mapOptions = {
+        zoom: 16,
+        noClear: true,
+        disableDefaultUI: true,
+        center: new google.maps.LatLng(37.1937506, -3.619635217),
+            mapTypeControlOptions: {
+              mapTypeIds: [google.maps.MapTypeId.SATELLITE, 'map_style']
+            }
+        };
+        var map = new google.maps.Map(document.getElementById('map'), 
+            mapOptions);
+
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+
+        var marker = new google.maps.Marker({
+          position: {lat:37.1937506, lng:-3.619635217},
+          map: map,
+          title: 'Delicatezza'
+        });
+    }
+
+    window.initMap = initMap;
+
 })(jQuery); // End of use strict

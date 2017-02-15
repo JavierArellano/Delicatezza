@@ -28,6 +28,7 @@ a {
     &:hover,
     &:focus {
         color: darken($theme-primary, 10%);
+        text-decoration: none;
     }
 }
 
@@ -73,12 +74,18 @@ p {
     color: rgba(white, 70%/100.0%);
 }
 
+
 section {
     padding: 100px 0;
 }
 
 section#menu {
     padding: 60px;
+}
+
+section#location {
+    padding-top: 0px;
+    padding-bottom: 100px;
 }
 
 aside {
@@ -366,7 +373,7 @@ header {
 .button-transparent {
     border: 1px solid #fafafa;
     &:hover {
-        background-color: #ccc
+        background-color: #ccc;
     }
 }
 
@@ -425,6 +432,10 @@ header {
     letter-spacing: 2px;
     color: #a7a9ac;
     //margin: 0;
+}
+
+.module-title-padding {
+    padding: 40px;
 }
 
 /* ---------------------------------------------- /*
@@ -629,7 +640,27 @@ blockquote span {
     display: none;
 }
 
+#map {
+    height: 300px;
+    width: 100%;
+}
 
+.map-address {
+    position:relative;
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+    top: 65%;
+    z-index: 99;
+    padding: 10px;
+    text-transform: uppercase;
+    @include serif-font;
+    font-size: 16px;
+}
+
+.location-title {
+    padding-bottom: 60px;
+}
 
 // Extras
 // -- Highlight Color Customization

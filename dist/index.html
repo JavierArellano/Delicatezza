@@ -405,7 +405,7 @@
 
                         <!-- Slide 2 -->
                         <div class="item">
-                            <blockquote><span>&#8220;</span>¡Me encanta este sitio!<span>&#8221;</span></blockquote>
+                            <blockquote><span>&#8220;</span>¡La mejor cocina italiana!<span>&#8221;</span></blockquote>
                             <div class="testimonial-avatar">
                                 <img src="https://s3.amazonaws.com/uifaces/faces/twitter/walterstephanie/128.jpg" alt="">
                             </div>
@@ -510,8 +510,7 @@
                         </div><!-- .row -->
 
                     </form>
-                    <!-- Ajax response -->
-                    <div id="booking-response" class="ajax-response"></div>
+
 
                 </div>
             </div><!-- .row -->
@@ -527,95 +526,12 @@
         </div><!-- .container -->
     </section>
 
-     <section id="booking" class="module">
-         <div class="container">
-
-             <div class="row">
-                 <div class="col-sm-6 col-sm-offset-3">
-                     <div class="module-header fadeInUp">
-                         <h2 class="module-title text-center">Reservar</h2>
-                         <h3 class="module-subtitle text-center">Reserva tu mesa.</h3>
-                         <h6 class="module-warn text-center">* Reserva obligatoria</h6>
-                     </div>
-                 </div>
-             </div><!-- .row -->
-
-             <div class="row">
-
-                 <div class="col-sm-8 col-sm-offset-2">
-
-                     <form id="booking-form" role="form" data-mobiletimepiker="On" novalidate>
-
-                         <div class="row">
-                             <div class="col-sm-6 form-group">
-                                 <label class="sr-only" for="bname">Nombre</label>
-                                 <input type="text" id="bname" class="form-control" Nombre="bname" placeholder="Nombre" required data-validation-required-message="Please enter your name.">
-                                 <p class="help-block text-danger"></p>
-                             </div>
-
-                             <div class="col-sm-6 form-group">
-                                 <label class="sr-only" for="bphone">Tlf</label>
-                                 <input type="number" id="bphone" class="form-control" name="bphone" placeholder="Tlf" required data-validation-required-message="Please enter your phone number.">
-                                 <p class="help-block text-danger"></p>
-                             </div>
-                         </div><!-- .row -->
-
-                         <div class="row">
-                             <div class="col-sm-6 form-group">
-                                 <label class="sr-only" for="bemail">Email</label>
-                                 <input type="email" id="bemail" class="form-control" name="bemail" placeholder="Email" required data-validation-required-message="Please enter your email address.">
-                                 <p class="help-block"></p>
-                             </div>
-
-                             <div class="col-sm-6 form-group">
-                                 <label class="sr-only" for="bpeople">Nº Personas</label>
-                                 <input type="text" id="bpeople" class="form-control" name="bpeople" placeholder="Nº Personas" required data-validation-required-message="Please enter number of guests.">
-                                 <p class="help-block text-danger"></p>
-                             </div>
-                         </div><!-- .row -->
-
-                         <div class="row">
-                             <div class="col-sm-6 form-group">
-                                 <label class="sr-only" for="bdate">Fecha</label>
-                                 <input type="text" id="bdate" class="form-control" name="bdate" placeholder="Fecha" required data-validation-required-message="Please enter reservation date.">
-                                 <p class="help-block text-danger"></p>
-                             </div>
-
-                             <div class="col-sm-6 form-group">
-                                 <label class="sr-only" for="btime">Hora</label>
-                                 <input type="text" id="btime" class="form-control" name="btime" placeholder="Hora" autocomplete="off" required data-validation-required-message="Please enter your arrival time.">
-                                 <p class="help-block text-danger"></p>
-                             </div>
-                         </div><!-- .row -->
-
-                         <div class="row">
-                             <div class="col-sm-12 form-group">
-                                 <textarea class="form-control" id="bmessage" name="bmessage" rows="4" placeholder="Solicitudes Especiales" required data-validation-required-message="Solicitudes especiales."></textarea>
-                                 <p class="help-block text-danger"></p>
-                             </div>
-                         </div><!-- .row -->
-
-                         <div class="row">
-                             <div class="col-sm-12 text-center">
-                                 <button type="submit" class="button-skewed button-white booking-btn">Reservar</button>
-                             </div>
-                         </div><!-- .row -->
-
-                     </form>
-                     <!-- Ajax response -->
-                     <div id="booking-response" class="ajax-response"></div>
-
-                 </div>
-             </div><!-- .row -->
-
-             <div class="row">
-                 <div class="col-sm-6 col-sm-offset-3">
-                     <div class="devider">
-                         <img src="img/decoration.svg" alt="">
-                     </div>
-                 </div>
-             </div><!-- .row -->
-
+     <section id="location" class="module">
+         <h1 class="location-title menu-header-title text-center"> Localización </h1>
+         <div id="map" class="container">
+            <div class="button-transparent map-address">
+                <a target="_blank" href="https://www.google.es/maps/@37.1937506,-3.6218239,17z" class="btn-xl page-scroll">Calle Coscoso, 20</a>
+            </div>
          </div><!-- .container -->
      </section>
 </div>
@@ -633,6 +549,8 @@
     <script src="vendor/owl/owl.carousel.min.js"></script>
     <!-- Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8l6U1M2yY9obQGToVUea7EsH1EUqB6-0&callback=initMap"
+            async defer></script>
 
 
 </body>
