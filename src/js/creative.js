@@ -61,4 +61,21 @@
         }
     });
 
+    // $('.testimonials-slider').owlCarousel({
+    //     paginationSpeed: 600,
+    //     pagination: false,
+    //     navigation: false,
+    //     singleItem: true,
+    //     slideSpeed: 300,
+    //     autoPlay: 5000
+    // });
+
+    $('.testimonials-slider').owlCarousel({
+        items:1,
+        margin:10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        loop: true
+    })
+
 })(jQuery); // End of use strict

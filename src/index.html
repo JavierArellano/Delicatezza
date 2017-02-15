@@ -24,6 +24,8 @@
 
     <!-- Theme CSS -->
     <link href="css/main.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,6 +39,7 @@
 <body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -56,10 +59,10 @@
                         <a class="page-scroll" href="#menu">Carta &amp; Menú</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#booking">Reserva</a>
+                        <a class="page-scroll" href="#callout-three">Testimonios</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#testimonials">Testimonios</a>
+                        <a class="page-scroll" href="#booking">Reserva</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#location">Localización</a>
@@ -93,7 +96,7 @@
                     <p class="separator">***</p>
                     <p class="text-faded">Encuentra en nuestro restaurante nuestras especialidades más exquisitas. Realiza tu reserva ya para poder conocer nuestras más selectas experiencias. Conocerás nuestros manjares más exclusivos y te deleitarás de nuestra mejor especialidad: La pizza.</p>
                     <div class="button-skewed button-white">
-                        <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Reservar</a>
+                        <a href="#booking" class="page-scroll btn btn-default btn-xl sr-button">Reservar</a>
                     </div>
                 </div>
             </div>
@@ -380,14 +383,67 @@
         </div><!-- .container -->
     </section>
 
+    <section id="callout-three" class="callout bg-dark-alfa-30">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-10 col-sm-offset-1">
+                    <div class="testimonials-slider owl-carousel owl-theme">
+
+                        <!-- Slide 1 -->
+                        <div class="item">
+                            <blockquote><span>&#8220;</span>Una pasta y vistas increíbles. La mejor pizza de Granada.<span>&#8221;</span></blockquote>
+                            <div class="testimonial-avatar">
+                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/soffes/128.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author">
+                                <h6>&#8212; Roberto Madera</h6>
+                                <div class="row"></div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="item">
+                            <blockquote><span>&#8220;</span>¡Me encanta este sitio!<span>&#8221;</span></blockquote>
+                            <div class="testimonial-avatar">
+                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/walterstephanie/128.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author">
+                                <h6>&#8212; Andrea Navarro</h6>
+                                <div class="row"></div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="item">
+                            <blockquote><span>&#8220;</span>Quizás el restaurante más exquisito y lujoso de la ciudad.<span>&#8221;</span></blockquote>
+                            <div class="testimonial-avatar">
+                                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/dannpetty/128.jpg" alt="">
+                            </div>
+                            <div class="testimonial-author">
+                                <h6>&#8212; Jaime Ramírez</h6>
+                                <div class="row"></div>
+                            </div>
+                        </div>
+
+                    </div><!-- .testimonials-slider -->
+                </div><!-- .col-sm-10 -->
+
+            </div><!-- .row -->
+
+        </div><!-- .container -->
+    </section>
+
     <section id="booking" class="module">
         <div class="container">
 
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <div class="module-header wow fadeInUp">
-                        <h2 class="module-title">Make a reservation</h2>
-                        <h3 class="module-subtitle">Book a table</h3>
+                    <div class="module-header fadeInUp">
+                        <h2 class="module-title text-center">Reservar</h2>
+                        <h3 class="module-subtitle text-center">Reserva tu mesa.</h3>
+                        <h6 class="module-warn text-center">* Reserva obligatoria</h6>
                     </div>
                 </div>
             </div><!-- .row -->
@@ -400,14 +456,14 @@
 
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label class="sr-only" for="bname">Name</label>
-                                <input type="text" id="bname" class="form-control" name="bname" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                                <label class="sr-only" for="bname">Nombre</label>
+                                <input type="text" id="bname" class="form-control" Nombre="bname" placeholder="Nombre" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
 
                             <div class="col-sm-6 form-group">
-                                <label class="sr-only" for="bphone">Phone</label>
-                                <input type="number" id="bphone" class="form-control" name="bphone" placeholder="Phone" required data-validation-required-message="Please enter your phone number.">
+                                <label class="sr-only" for="bphone">Tlf</label>
+                                <input type="number" id="bphone" class="form-control" name="bphone" placeholder="Tlf" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div><!-- .row -->
@@ -420,29 +476,29 @@
                             </div>
 
                             <div class="col-sm-6 form-group">
-                                <label class="sr-only" for="bpeople">How many people?</label>
-                                <input type="text" id="bpeople" class="form-control" name="bpeople" placeholder="How many people?" required data-validation-required-message="Please enter number of guests.">
+                                <label class="sr-only" for="bpeople">Nº Personas</label>
+                                <input type="text" id="bpeople" class="form-control" name="bpeople" placeholder="Nº Personas" required data-validation-required-message="Please enter number of guests.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div><!-- .row -->
 
                         <div class="row">
                             <div class="col-sm-6 form-group">
-                                <label class="sr-only" for="bdate">Date</label>
-                                <input type="text" id="bdate" class="form-control" name="bdate" placeholder="Date" required data-validation-required-message="Please enter reservation date.">
+                                <label class="sr-only" for="bdate">Fecha</label>
+                                <input type="text" id="bdate" class="form-control" name="bdate" placeholder="Fecha" required data-validation-required-message="Please enter reservation date.">
                                 <p class="help-block text-danger"></p>
                             </div>
 
                             <div class="col-sm-6 form-group">
-                                <label class="sr-only" for="btime">Time</label>
-                                <input type="text" id="btime" class="form-control" name="btime" placeholder="Time" autocomplete="off" required data-validation-required-message="Please enter your arrival time.">
+                                <label class="sr-only" for="btime">Hora</label>
+                                <input type="text" id="btime" class="form-control" name="btime" placeholder="Hora" autocomplete="off" required data-validation-required-message="Please enter your arrival time.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div><!-- .row -->
 
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <textarea class="form-control" id="bmessage" name="bmessage" rows="4" placeholder="Special Requests" required data-validation-required-message="Please enter your special requests."></textarea>
+                                <textarea class="form-control" id="bmessage" name="bmessage" rows="4" placeholder="Solicitudes Especiales" required data-validation-required-message="Solicitudes especiales."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div><!-- .row -->
@@ -469,27 +525,6 @@
             </div><!-- .row -->
 
         </div><!-- .container -->
-    </section>
-
-
-    <section id="booking">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section id="services">
@@ -563,7 +598,7 @@
             </div>
         </div>
     </section>
-
+</div>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -575,8 +610,10 @@
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+    <script src="vendor/owl/owl.carousel.min.js"></script>
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
+
 
 </body>
 
