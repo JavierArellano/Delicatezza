@@ -1,0 +1,26 @@
+::-moz-selection {
+    color: white;
+    text-shadow: none;
+    background: $gray-darker;
+}
+
+::selection {
+    color: white;
+    text-shadow: none;
+    background: $gray-darker;
+}
+
+img::selection {
+    color: white;
+    background: transparent;
+}
+
+img::-moz-selection {
+    color: white;
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: $gray-darker;
+    background-color: black;
+}

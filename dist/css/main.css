@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/*
+ *
+ * Pedro J. Martínez
+ * F. Javier Arellano
+ *
+ */
 html,
 body {
   height: 100%;
@@ -21,6 +28,9 @@ a {
   a:hover, a:focus {
     color: black;
     text-decoration: none; }
+  @media (max-width: 768px) {
+    a {
+      color: black !important; } }
 
 h1,
 h2,
@@ -34,6 +44,22 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px; }
+
+section {
+  padding: 100px 0; }
+
+section#menu {
+  padding: 60px; }
+
+section#location {
+  padding-top: 0px;
+  padding-bottom: 100px; }
+
+aside {
+  padding: 50px 0; }
+
+.no-padding {
+  padding: 0; }
 
 .separator {
   position: relative;
@@ -53,37 +79,65 @@ p {
   background-color: #222222;
   color: white; }
 
-.text-faded {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: rgba(255, 255, 255, 0.7); }
+.call-to-action h2 {
+  margin: 0 auto 20px; }
 
-section {
-  padding: 100px 0; }
+.button-skewed {
+  border-radius: 0px !important;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  width: 300px;
+  margin: 0 auto; }
 
-section#menu {
-  padding: 60px; }
+.button-transparent {
+  border: 1px solid #fafafa; }
+  .button-transparent:hover {
+    background-color: #ccc; }
 
-section#location {
-  padding-top: 0px;
-  padding-bottom: 100px; }
+.button-white a {
+  color: black !important; }
 
-aside {
-  padding: 50px 0; }
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  color: #fafafa;
+  border: none;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 0px; }
+  .btn:hover {
+    color: #333; }
 
-.no-padding {
-  padding: 0; }
+.module-warn {
+  color: #fff;
+  padding-bottom: 40px; }
 
-#logo {
-  letter-spacing: 8px; }
+.module-title,
+.callout-text,
+.iconbox-title {
+  color: #fff;
+  font: 700 28px/1.2 helvetica, cursive;
+  margin: 0 0 18px; }
 
-#logo > span {
-  position: absolute;
-  top: 20%;
-  font-size: 8px; }
+.module-title,
+.callout-text {
+  font-size: 50px; }
 
-#mainNav a {
-  color: #fff; }
+.module-subtitle {
+  padding-top: 40px;
+  font: 400 16px/1.2 sans-serif-font,  serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #a7a9ac; }
+
+.module-title-padding {
+  padding: 40px; }
+
+.divider {
+  text-align: center;
+  margin: 60px 0 0; }
 
 .navbar-fixed-top {
   border-width: 0px; }
@@ -151,6 +205,17 @@ aside {
           .navbar-default.affix .nav > li > a:focus:hover {
             color: black; } }
 
+#logo {
+  letter-spacing: 8px; }
+
+#logo > span {
+  position: absolute;
+  top: 20%;
+  font-size: 8px; }
+
+#mainNav a {
+  color: #fff; }
+
 header {
   position: relative;
   width: 100%;
@@ -201,17 +266,18 @@ header {
             margin-left: auto;
             margin-right: auto; } }
 
+@media (max-width: 768px) {
+  a.btn-xl.page-scroll {
+    color: white !important; } }
+
+/* Sections */
+.text-faded {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.7); }
+
 .section-heading {
   margin-top: 0; }
-
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0; }
-  @media (min-width: 992px) {
-    .service-box {
-      margin: 20px auto 0; } }
-  .service-box p {
-    margin-bottom: 0; }
 
 .gallery-box {
   position: relative;
@@ -256,9 +322,6 @@ header {
       font-size: 16px; }
     .gallery-box .gallery-box-caption .gallery-box-caption-content .project-name {
       font-size: 22px; } }
-
-.call-to-action h2 {
-  margin: 0 auto 20px; }
 
 .text-primary {
   color: black; }
@@ -321,34 +384,6 @@ header {
     color: transparent;
     background-color: #fff; }
 
-.button-skewed {
-  border-radius: 0px !important;
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
-  width: 300px;
-  margin: 0 auto; }
-
-.button-transparent {
-  border: 1px solid #fafafa; }
-  .button-transparent:hover {
-    background-color: #ccc; }
-
-.button-white a {
-  color: black !important; }
-
-.btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  color: #fafafa;
-  border: none;
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 0px; }
-  .btn:hover {
-    color: #333; }
-
 .btn-xl {
   padding: 15px 80px; }
 
@@ -356,34 +391,12 @@ header {
   color: #fff;
   text-transform: uppercase; }
 
-.module-warn {
-  color: #fff;
-  padding-bottom: 40px; }
+.form-control {
+  text-align: center; }
 
-.module-title,
-.callout-text,
-.iconbox-title {
-  color: #fff;
-  font: 700 28px/1.2 helvetica, cursive;
-  margin: 0 0 18px; }
+#popular {
+  padding: 0px; }
 
-.module-title,
-.callout-text {
-  font-size: 50px; }
-
-.module-subtitle {
-  padding-top: 40px;
-  font: 400 16px/1.2 sans-serif-font,  serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #a7a9ac; }
-
-.module-title-padding {
-  padding: 40px; }
-
-/* ---------------------------------------------- /*
- * Menu
-/* ---------------------------------------------- */
 .menu {
   border-bottom: 1px dotted #DDD;
   padding: 0 0 35px;
@@ -430,40 +443,6 @@ header {
   float: right;
   top: 5px; }
 
-/* ---------------------------------------------- /*
- * Servise
-/* ---------------------------------------------- */
-.iconbox {
-  background: #fae7d7;
-  text-align: center;
-  padding: 15px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-
-.iconbox-body {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 25px 10px; }
-
-.iconbox-icon {
-  color: #000;
-  font-size: 32px;
-  margin-bottom: 25px; }
-
-.iconbox-title {
-  color: #000;
-  margin: 0 0 15px;
-  padding: 0; }
-
-.iconbox-desc {
-  font-size: 15px; }
-
-#popular {
-  padding: 0px; }
-
-.devider {
-  text-align: center;
-  margin: 60px 0 0; }
-
 .booking-btn {
   margin-top: 20px;
   width: 30% !important;
@@ -473,9 +452,6 @@ header {
   color: #333;
   font-weight: bold;
   font-size: 16px; }
-
-.form-control {
-  text-align: center; }
 
 .callout {
   background-color: #222;

@@ -1,0 +1,21 @@
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+.map-address {
+    position:relative;
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+    top: 65%;
+    z-index: 99;
+    padding: 10px;
+    text-transform: uppercase;
+    @include serif-font;
+    font-size: 16px;
+}
+
+.location-title {
+    padding-bottom: 60px;
+}

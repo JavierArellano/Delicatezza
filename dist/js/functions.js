@@ -44,6 +44,45 @@
         scale: 0.3,
         distance: '0px'
     }, 300);
+    sr.reveal('#card-1', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('#card-2', {
+        duration: 600,
+        scale: 0.3,
+        delay: 200,
+        distance: '0px'
+    }, 200);
+    sr.reveal('#card-3', {
+        duration: 600,
+        scale: 0.3,
+        delay: 300,
+        distance: '0px'
+    }, 200);
+    sr.reveal('#booking-button', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('.map-address', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('#menu-1', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+    }, 200);
+    sr.reveal('#menu-2', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px',
+        delay: 200
+    }, 200);
+    
 
     // Initialize and Configure Magnific Popup Lightbox Plugin
     $('.popup-gallery').magnificPopup({

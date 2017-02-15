@@ -1,0 +1,29 @@
+.text-primary {
+    color: $theme-primary;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.btn-default {
+    @include button-variant($gray-darker,white,white);
+}
+
+.btn-primary {
+    @include button-variant(#fff,transparent,#fafafa);
+}
+
+.btn-xl {
+    padding: 15px 80px;
+}
+
+.card h1 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.form-control {
+    text-align: center;
+}

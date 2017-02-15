@@ -1,0 +1,97 @@
+.no-padding {
+    padding: 0;
+}
+
+.separator {
+    position: relative;
+    top: 30px;
+    text-align: center;
+}
+
+.white-separator {
+    color: #fff;
+}
+
+.bg-primary {
+    background: rgba(60, 63, 70, 0.7);
+    background: linear-gradient(#120c13 .84%, #000);
+    background-color: #000;
+}
+
+.bg-dark {
+    background-color: $gray-darker;
+    color: white;
+}
+
+.call-to-action {
+    h2 {
+        margin: 0 auto 20px;
+    }
+}
+
+.button-skewed {
+    border-radius: 0px !important;
+    transform: skew(-20deg);
+    width: 300px;
+    margin: 0 auto;
+}
+
+.button-transparent {
+    border: 1px solid #fafafa;
+    &:hover {
+        background-color: #ccc;
+    }
+}
+
+.button-white a {
+    color: black !important;
+}
+
+.btn {
+    @include sans-serif-font;
+    transform: skew(20deg);
+    color: #fafafa;
+    border: none;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0px;
+    &:hover {
+        color: #333;
+    }
+}
+
+.module-warn {
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.module-title,
+.callout-text,
+.iconbox-title {
+    color: #fff;
+    font: 700 28px/1.2 helvetica, cursive;
+    margin: 0 0 18px;
+}
+
+.module-title,
+.callout-text {
+    font-size: 50px;
+}
+
+.module-subtitle {
+    padding-top: 40px;
+    font: 400 16px/1.2 sans-serif-font,  serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #a7a9ac;
+}
+
+.module-title-padding {
+    padding: 40px;
+}
+
+.divider {
+    text-align: center;
+    margin: 60px 0 0;
+}

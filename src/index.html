@@ -38,10 +38,11 @@
 
 <body id="page-top">
 
+    <!-- Navbar -->
+
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
 
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
@@ -49,7 +50,6 @@
                 <a id="logo" class="navbar-brand page-scroll" href="#page-top">Delicatezza<span>™</span></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -69,12 +69,13 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+
     </nav>
 
+    <!-- Header -->
     <header>
+
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">Descubre el auténtico sabor</h1>
@@ -82,13 +83,16 @@
                 <p>Las pizzas Delicatezza™ te transportarán a un nuevo mundo de sabor. Descubre ahora la
                 colección de nuestras selectas pastas italianas y risottos. </p>
                 <div class="button-skewed button-transparent">
-                    <a href="#about" class="btn btn-xl page-scroll"><span>Descubrir</span></a>
+                    <a  href="#about" class="btn btn-xl page-scroll"><span>Descubrir</span></a>
                 </div>
             </div>
         </div>
+
     </header>
 
+    <!-- Discover section -->
     <section class="bg-primary" id="about">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -101,6 +105,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class="no-padding" id="gallery">
@@ -205,16 +210,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-center">
-                    <div class="card">
+                    <div id="card-1" class="card">
                         <img class="img-fluid" src="../img/menu/tua_festa.jpg">
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div id="card-2" class="col-lg-4 text-center">
                     <div class="card">
                         <img class="img-fluid" src="../img/menu/per_piacere.jpg">
                     </div>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div id="card-3" class="col-lg-4 text-center">
                     <div class="card">
                         <img class="img-fluid" src="../img/menu/bianco.jpg">
                     </div>
@@ -238,7 +243,7 @@
 
             <div class="row">
 
-                <div class="col-sm-6">
+                <div id="menu-1" class="col-sm-6">
 
                     <div class="menu">
                         <div class="row">
@@ -304,7 +309,7 @@
 
                 </div><!-- .col-sm-6 -->
 
-                <div class="col-sm-6">
+                <div id="menu-2" class="col-sm-6">
 
                     <div class="menu">
                         <div class="row">
@@ -374,7 +379,7 @@
 
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <div class="devider">
+                    <div class="divider">
                         <img src="img/decoration.svg" alt="">
                     </div>
                 </div>
@@ -505,7 +510,7 @@
 
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <button type="submit" class="button-skewed button-white booking-btn">Reservar</button>
+                                <button id="booking-button" type="submit" class="button-skewed button-white booking-btn">Reservar</button>
                             </div>
                         </div><!-- .row -->
 
@@ -517,7 +522,7 @@
 
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <div class="devider">
+                    <div class="divider">
                         <img src="img/decoration.svg" alt="">
                     </div>
                 </div>
@@ -548,10 +553,9 @@
 
     <script src="vendor/owl/owl.carousel.min.js"></script>
     <!-- Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    <script src="js/functions.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8l6U1M2yY9obQGToVUea7EsH1EUqB6-0&callback=initMap"
             async defer></script>
-
 
 </body>
 

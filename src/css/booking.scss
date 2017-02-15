@@ -1,0 +1,10 @@
+.booking-btn {
+    margin-top: 20px;
+    width: 30% !important;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    @include sans-serif-font;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
